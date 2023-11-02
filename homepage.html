@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/homepage.css">
+    <!-- <link rel="stylesheet" href="static/landingpage.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Serif+Khitan+Small+Script&family=Poppins&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>BodyBalanceBites - Homepage</title>
+</head>
+
+<body>
+    <!-- Navbar Section of Homepage -->
+    <header class="bg-[#161614]">
+        <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="md:flex md:items-center md:gap-12 ff1">
+                    <img src="static/img/logo.png" alt="logo" class="block h-auto w-[30%]">
+                </div>
+
+                <div class="hidden md:block">
+                    <nav aria-label="Global">
+                        <ul class="flex items-center gap-6 text-sm ff2 font-medium nav-menu">
+                            <li class="nav-items">
+                                <a class="text-white transition hover:text-gray-500/75" href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="text-white transition hover:text-gray-500/75" href="#BMI">
+                                    BMI Calculator
+                                </a>
+                            </li>
+
+                            <li class="nav-items">
+                                <a class="text-white transition hover:text-gray-500/75" href="#weightLoss">
+                                    Weight Loss
+                                </a>
+                            </li>
+
+                            <li class="nav-items">
+                                <a class="text-white transition hover:text-gray-500/75" href="#weightGain">
+                                    Weight Gain
+                                </a>
+                            </li>
+
+                            <li class="nav-items">
+                                <a class="text-white transition hover:text-gray-500/75" href="#blog">
+                                    Blog
+                                </a>
+                            </li>
+
+                            <li class="nav-items">
+                                <a class="text-white transition hover:text-gray-500/75" href="#footer">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section of Homepage -->
+    <section id="home" class="relative bg-[url('static/img/HeroSection.jpg')] bg-cover bg-center bg-no-repeat">
+        <div
+            class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l">
+        </div>
+
+        <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+            <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <h1 class="text-3xl text-[#161614] font-extrabold sm:text-5xl ff3">
+                    Delight.
+
+                    <strong class="block font-extrabold text-[#7F411C] ff3">
+                        Savor. Nourish.
+                    </strong>
+                </h1>
+
+                <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+                    Body Balance Bites creates personalized meal plans based on your food preferences, medical record and work
+                    schedule. Reach your diet and nutritional goals with our weekly meal plans, grocery lists and more.
+                    Create your meal plan right here in seconds.
+                </p>
+
+                <div class="mt-8 flex flex-wrap justify-center gap-4 text-center">
+                    <a href="#weightLoss"
+                        class="block w-full rounded bg-[#161614] px-12 py-3 text-sm font-medium text-white shadow hover:bg-white hover:text-[#161614] focus:outline-none focus:ring active:bg-rose-500 sm:w-auto ff2">
+                        Weight Loss
+                    </a>
+
+                    <a href="#weightGain"
+                        class="block w-full bg-white text-[#161614] rounded px-12 py-3 text-sm font-medium shadow focus:outline-none focus:ring active:text-rose-500 sm:w-auto ff2">
+                        Weight Gain
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Form Section of BMI -->
+    <section id="BMI" class="bg-white">
+        <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+            <aside class="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
+                <img alt="Pattern"
+                    src="https://cdn.dribbble.com/users/1424699/screenshots/5082429/ezgif.com-video-to-gif__4_.gif"
+                    class="absolute inset-0 h-full w-full object-cover" />
+            </aside>
+
+            <main
+                class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
+                <div class="max-w-xl lg:max-w-3xl">
+
+                    <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl ff3">
+                        BMI Calculator
+                    </h1>
+
+                    <p class="mt-4 leading-relaxed text-gray-500">
+                        Don't wait any longer – knowing your BMI is the first step towards a better lifestyle. Start
+                        your health journey now and gain valuable insights into your health.
+                    </p>
+
+                    <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+
+
+                        <div class="col-span-6">
+                            <label for="height" class="block text-sm font-medium text-gray-700">
+                                Height in CM:
+                            </label>
+
+                            <input type="email" id="height" name="height"
+                                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm outline-none" /><br>
+                            <span id="height_error"></span>
+                        </div>
+
+                        <div class="col-span-6">
+                            <label for="weight" class="block text-sm font-medium text-gray-700">
+                                Weight in KG:
+                            </label>
+
+                            <input type="text" id="weight" name="weight"
+                                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm outline-none" /><br>
+                            <span id="weight_error"></span>
+                        </div>
+
+
+                        <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+                            <button id="BMIbtn"
+                                class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+                                Calculate
+                            </button>
+                        </div>
+
+                        <div id="BMIoutput" class="col-span-6 sm:col-span-3 ff3 hidden">
+                            <label for="age" class="block text-sm font-medium text-gray-700">
+                                <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl ff2">
+                                    Here's your BMI
+                                </h1>
+                            </label>
+
+                            <div id="output1"
+                                class="w-full resize-none text-2xl font-semibold align-middle ff2 px-0 align-top sm:text-sm sm:font-md text-center border-2 border-black">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+
+    <!-- Weight-Loss Section of Homepage -->
+    <section id="weightLoss" class="bg-[#262424]">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
+                <div class="grid p-6 bg-[#B37C56] rounded place-content-center sm:p-8">
+                    <div class="max-w-md mx-auto text-center lg:text-left">
+                        <header>
+                            <h2 class="text-xl font-bold text-gray-900 sm:text-3xl ff3">Welcome to our Weight Loss
+                                Section!
+                            </h2>
+
+                            <p class="mt-4 font-semibold text-[#fdfdfd]">
+                                Here, we've assembled a collection of carefully curated resources and recipes to support
+                                your journey towards a healthier you. Our nutrient-rich recipes are not only delicious
+                                but also designed to aid in weight loss, ensuring you get the essential nutrients your
+                                body needs.
+                            </p>
+                        </header>
+
+                        <button id="Lossbtn"
+                            class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-gray-900 border border-gray-900 rounded over:shadow focus:outline-none focus:ring">
+                            Show All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:py-8">
+                    <ul class="grid grid-cols-2 gap-4">
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="static/img/WeightLoss/Loss1.jpg" alt="card-1"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Salmon-Stuffed Avocados                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#fdfdfd]"> Directions
+                                        Combine yogurt, celery, parsley, lime juice, mayonnaise, mustard, salt, and pepper in a medium bowl; mix well. Add salmon and mix well. Halve avocados lengthwise and remove pits. Scoop about 1 tablespoon flesh from each avocado half into a small bowl. Mash the scooped-out avocado flesh with a fork and stir into the salmon mixture.
+                                        
+                                        Fill each avocado half with about 1/4 cup of the salmon mixture, mounding it on top of the avocado halves. Garnish with chives, if desired. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="./static/img/WeightLoss/Loss2.jpg" alt="card-2"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Healthy weight loss salad
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#fdfdfd]">This high protein salad recipe for weight
+                                        loss, is a filling meal for lunch or for dinner. Its loaded with healthy fats,
+                                        fibre and protein making it a super filling weight loss salad recipe. The green
+                                        goddess salad dressing is vegan and dairy free.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="MoreLoss" class="lg:col-span-3 lg:py-8 hidden">
+                    <ul class="grid grid-cols-3 gap-4">
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="static/img/WeightLoss/Loss3.jpeg" alt="card-1"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        One-Pan Rosemary Chicken and Root Vegetables.
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#fdfdfd]">You simply load up an aluminum-foil-lined
+                                        sheet pan with your ingredients, pop ’em into the oven, and wait for dinner to
+                                        be served. There’s no need to use excessive oil for cooking (a great way to keep
+                                        the calories low), and clean-up is a breeze. Seriously, what’s to hate about
+                                        that? In that spirit, we created this One-Pan Rosemary Chicken and Root
+                                        Vegetables dish.I</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="static/img/WeightLoss/Loss4.jpg" alt="card-1"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Bulletproof coffee recipe
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#fdfdfd]">how to make bulletproof coffee also known as keto coffee, ghee coffee, coconut coffee, butter coffee. Bulletproof coffee is a low carb coffee made with brewed coffee and a source of healthy fat. It can be had as a pre workout energy boost or as a weight loss coffee, Its a great way to boost energy and fat burning abilities in the morning. Its popular with people following a high fat low carb diet.
+
+                                        Bulletproof coffee is to be drunk preferably on an empty stomach as it helps to increase energy and endurance, hence some people prefer to have it before workout. Bulletproof coffee also helps to boost your metabolism, suppress appetite and reduce inflammation.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="static/img/WeightLoss/Loss5.jpg" alt="card-1"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Summer Vegetable Gnocchi Salad
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#fdfdfd]">Preheat grill to medium-high.Boil gnocchi according to package directions. Drain.
+
+                                        Meanwhile, brush eggplant, zucchini, squash, corn and onion with 2 tablespoons oil. Grill the vegetables, turning occasionally, until charred and tender, 6 to 10 minutes total. Transfer to a cutting board. Remove the corn kernels from the cob and cut the other vegetables into bite-size pieces.
+                                        
+                                        Whisk the remaining 2 tablespoons oil, vinegar, basil, garlic, pepper and salt in a large bowl. Add the gnocchi and the vegetables and toss to coat. Serve sprinkled with feta.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <div id="output2">
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Weight Gain Section of Homepage -->
+    <section id="weightGain">
+        <div class=" max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
+                <div class="grid p-6 bg-[#7F411C] rounded place-content-center sm:p-8">
+                    <div class="max-w-md mx-auto text-center lg:text-left">
+                        <header>
+                            <h2 class="text-xl font-bold text-[#f5caa7] sm:text-3xl ff3">Welcome to our
+                                Weight Gain
+                                Section!
+                            </h2>
+
+                            <p class="mt-4 text-[#fdfdfd] font-semibold">
+                                Here, we've assembled a collection of carefully curated resources and
+                                recipes to support
+                                your journey towards a healthier you. Our nutrient-rich recipes are not only
+                                delicious
+                                but also designed to aid in weight loss, ensuring you get the essential
+                                nutrients your
+                                body needs.
+                            </p>
+                        </header>
+
+                        <button id="Gainbtn"
+                            class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-[#161614] rounded hover:shadow focus:outline-none focus:ring">
+                            Show All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:py-8">
+                    <ul class="grid grid-cols-2 gap-4">
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="static/img/WeightGain/Gain1.jpg"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Dry Fruit Milkshake.
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#262424]"> Combined with the rich and comforting taste of milk, the blended dry fruits give rise to a memorable Indian dry fruit milkshake which is boosted further by a crunchy garnish of mixed nuts . This dry fruits nuts milkshake  is indeed a protein rich fare. Try and add less sugar If possible to make healthier
+                                        You can make rich , sweet , comforting taste of this dry fruits milkshake  through your senses and revitalize your body
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="static/img/WeightGain/Gain2.jpeg"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Steel cut oats or unfavoured instant oatmeals
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#262424]">Oatmeal is also a great meal for weight gain
+                                        since you can easily add extra calories.Then, choose milk instead of water for
+                                        extra calories and protein, followed by nutritious, calorie-dense toppings like:
+
+                                        almonds
+                                        walnuts and honey. Finally, top your oatmeal frozen fruit for a dash of
+                                        sweetness and nutrition.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="MoreGain" class="lg:col-span-3 lg:py-8 hidden">
+                    <ul class="grid grid-cols-3 gap-4">
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="./static/img/WeightGain/Gain3.jpg" alt="card-1"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Moong Bhel
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#262424]">Moong Bhel   Peanuts are cheap in India and make a super easy weight gain snack for kids in homemade Indian peanut butter  which has all the right fats used in the recipe. The key is that there is no vegetable oil used in this recipe!
+                                        Continue next paragraph*  Filled with energy and protein, this tasty healthy moong Bhel snack gives enough energy and stamina to race through the rest of the day! Sprouted moong are a very good source of fibre too! It's necessary to cleanse your digestive tract and is good to eat
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="./static/img/WeightGain/Gain4.jpg" alt="card-1"
+                                    class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Carrot , Green Peas Creamy Sandwich 🥪 
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#262424]">Creamy Toast sandwich     A gooey spread of mixed veggies and cheese adds charm to crisp toasted bread. The contrast between the texture of the bread and the spread is very appealing, and so is the exciting flavour contributed by ginger and green chillies.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="./static/img/WeightGain/Gain5.jpg" class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-bold text-[#7F411C] group-hover:underline group-hover:underline-offset-4">
+                                        Broccoli oats panner tikki 
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-[#262424]">The broccoli oats panner tikki is a simple yet innovative snack that'll brace the tummy for an exciting meal 
+                                        Featuring a healthy blend of ingredients like antioxidant -rich broccoli, calcium - rich panner and fibre - rich oats , this healthy Indian broccoli tikki tastes so fabulous that it does not feel like health food , but like a peppy starter just right to fire off a meal.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <div id="output3">
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section of Homepage -->
+    <section id="blog" class="pb-8 border-t border-gray-300 pt-4">
+        <p class="flex justify-center mb-8 text-3xl font-semibold text-[#161614] ff3">Blog</p>
+
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch px-16">
+
+            <article
+                class="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6  bg-white">
+
+                <a href="https://www.mynetdiary.com/what-causes-sugar-cravings.html">
+                    <h3 class="mt-0.5 text-lg font-medium text-gray-900 font-medium">
+                        Learn what to do when sugar cravings hit and what causes them in the first place
+                    </h3>
+                </a>
+
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                    Sugar cravings are normal. After all, we are born with a preference for sweet tastes, an
+                    evolutionary advantage to help ensure nourishment. The cravings become problematic if they lead to
+                    overeating sweets, keeping you from meeting your health and weight-loss goals.
+
+                    Understanding the nature of sugar cravings can help you minimize their frequency and intensity and
+                    know how to respond when they happen. See if these common causes sound familiar to your experience.
+                </p>
+
+                <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                    Find out more
+
+                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                        &rarr;
+                    </span>
+                </a>
+            </article>
+
+
+
+            <article class="rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6">
+                <a href="#">
+                    <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+                        Dietitian-approved tips for healthy weight gain
+                    </h3>
+                </a>
+
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                    To fuel your body, you need calories. To gain weight, you must eat and drink more calories or fuel
+                    than you burn. Under-eating calories from carbs and fat while loading up on protein to build muscles
+                    won't work. The best way to ensure you get enough calories each day to promote muscle is to eat
+                    consistently. Try dividing your meals and snacks equally throughout the day, and strive to eat three
+                    meals and three snacks every day.
+                </p>
+
+                <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                    Find out more
+
+                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                        &rarr;
+                    </span>
+                </a>
+            </article>
+
+
+            <article class="rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6">
+                <a href="https://www.mynetdiary.com/healthy-ways-to-deal-with-stress.html">
+                    <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+                        Healthy ways to deal with stress so it doesn’t sabotage your weight loss
+                    </h3>
+                </a>
+
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                    If left unchecked for too long, chronic stress can result in weight gain. A newsletter from Harvard
+                    Medical School says that we often deal with stress in ways that can be harmful to our health. This
+                    includes activities such as binge-watching Netflix™, sleeping too much (or not enough), or drinking
+                    alcohol as ways to cope with increased pressure and life’s demands. These avoidant behaviors might
+                    provide temporary relief or a distraction from the pain or anxiety associated with stress.
+                    Consequently, they can also sabotage your efforts to lose weight and keep it off or result in
+                    unforeseen addiction and other challenges.
+                </p>
+
+                <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                    Find out more
+
+                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                        &rarr;
+                    </span>
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- Footer Section of Homepage -->
+    <footer id="footer" class="bg-[#2C5C4A]">
+        <div class="mx-auto max-w-screen-xl px-4 pb-6 sm:px-6 lg:px-8">
+            <div class="mt-2 grid grid-cols-1 gap-8 pt-8 md:grid-cols-4 lg:grid-cols-6">
+                <div class="text-center sm:text-left">
+                    <p class="text-lg text-[#E9E3B4] font-medium text-[#E9E3B4] ff2">Our Services</p>
+
+                    <ul class="mt-8 space-y-4 text-sm">
+                        <li>
+                            <a class="text-[#E9E3B4] transition hover:text-gray-700/75" href="#weightGain">
+                                Weight Gain
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-[#E9E3B4] transition hover:text-gray-700/75" href="#weightLoss">
+                                Weight Loss
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center sm:text-left">
+                    <p class="text-lg font-medium text-[#E9E3B4] ff2">Resources</p>
+
+                    <ul class="mt-8 space-y-4 text-sm">
+                        <li>
+                            <a class="text-[#E9E3B4] transition hover:text-gray-700/75" href="/">
+                                Online Guides
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center sm:text-left">
+                    <p class="text-lg font-medium text-[#E9E3B4] ff2">Helpful Links</p>
+
+                    <ul class="mt-8 space-y-4 text-sm">
+                        <li>
+                            <a class="text-[#E9E3B4] transition hover:text-gray-700/75" href="/">
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-[#E9E3B4] transition hover:text-gray-700/75" href="/">
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center sm:text-left md:col-span-4 lg:col-span-2">
+                    <p class="text-lg font-medium text-[#E9E3B4] ff2">Contact Us</p>
+
+                    <div class="mx-auto mt-8 max-w-md sm:ms-0">
+                        <p class="text-center leading-relaxed text-[#E9E3B4] ltr:sm:text-left rtl:sm:text-right">
+                            Mail us your queries
+                        </p>
+
+                        <form class="mt-4" id="emailForm" onsubmit="sendEmail(); reset(); return false;"  action="/">
+                            <div class="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
+                                <label for="message" class="sr-only">message</label>
+
+                                <input class="w-full rounded-full border-2 border-gray-200 px-6 py-3 shadow-sm"
+                                    id="message" name="message" type="text" placeholder="message"/>
+                                <button
+                                    class="block rounded-full bg-[#007991] px-8 py-3 font-medium text-white transition hover:bg-indigo-600 ff2"
+                                    type="submit" value="Send Email">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                        <!-- <form id="">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required><br>
+                    
+                            <label for="feedback">Feedback:</label>
+                            <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+                    
+                            <button type="button" id="sendFeedback">Send Feedback</button>
+                        </form> -->
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 sm:flex sm:items-center sm:justify-between">
+                <p class="text-center text-sm text-gray-800 sm:text-left">
+                    Copyright &copy; 2023. All rights reserved.
+                </p>
+
+                <ul class="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100095331546940&mibextid=ZbWKwL"
+                            rel="noreferrer" target="_blank" class="text-teal-700 transition hover:text-teal-700/75">
+                            <span class="sr-only">Facebook</span>
+                            <img src="static/img/icons/facebook.png" class="h-6 w-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" https://www.instagram.com/invites/contact/?i=8xy91cxsvm3x&utm_content=ry77mwt"
+                            rel="noreferrer" target="_blank" class="text-teal-700 transition hover:text-teal-700/75">
+                            <span class="sr-only">Instagram</span>
+                            <img src="static/img/icons/instagram.png" class="h-6 w-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.threads.net/@bodybalancebites" rel="noreferrer" target="_blank"
+                            class="text-teal-700 transition hover:text-teal-700/75">
+                            <span class="sr-only">Twitter</span>
+                            <img src="static/img/icons/twitter.png" class="h-6 w-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/Soham-Niungare/Meal-Planner-" rel="noreferrer" target="_blank"
+                            class="text-teal-700 transition hover:text-teal-700/75">
+                            <span class="sr-only">GitHub</span>
+                            <img src="static/img/icons/github.png" class="h-6 w-6">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="static/homepage.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
+
+</html>
